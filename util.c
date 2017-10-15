@@ -49,7 +49,7 @@ void start_cpu_load(void) {
 
 	cont = 1;	
 	
-	for (int i = 0; i < ncores; i++) {
+	for (i = 0; i < ncores; i++) {
 		pthread_create(&threads[i], NULL, loop, NULL);
 	}
 }
